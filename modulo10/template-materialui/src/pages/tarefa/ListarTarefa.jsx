@@ -84,9 +84,11 @@ const ListarTarefa = () => {
     return(
     <>
     <Card>
+      {/* Centralizei o conteudo */}
         <CardHeader
           title="Tarefas"
           subheader="Listagem de Tarefas"
+          style={{textAlign:"center"}}
         /> 
         <CardContent>
             <TableContainer component={Paper}>
@@ -134,8 +136,9 @@ const ListarTarefa = () => {
             </TableContainer>
         </CardContent>
         <CardActions>
-            <Button size="small" variant="contained" onClick={handleOpen}>Criar Tarefa</Button>
-            <Button size="small" variant="outlined">Cancelar</Button>
+          {/* Alterei as cores dos botões */}
+            <Button size="small" variant="contained" onClick={handleOpen} style={{backgroundColor:"green"}}>Criar Tarefa</Button>
+            <Button size="small" variant="outlined" style={{borderColor:"green", color:"green"}}>Cancelar</Button>
       </CardActions> 
     </Card>
     <div>

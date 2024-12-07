@@ -11,7 +11,9 @@ function Header() {
     return (
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
-          <Toolbar>
+          
+          {/* Alterei a cor de fundo e centralizei o texto*/}
+          <Toolbar style={{textAlign:"center", backgroundColor:"green"}}>
             <IconButton
               size="large"
               edge="start"
@@ -23,8 +25,10 @@ function Header() {
               <MenuIcon />
               */}
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Gerenciamento de Projetos
+
+            {/* Alterei texto */}
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}  >
+            P&R 3 - Pratica Integradora Tecnologias Disruptivas
             </Typography>
           </Toolbar>
         </AppBar>
